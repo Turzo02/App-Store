@@ -16,11 +16,11 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-    {/* <AllApplicationPage></AllApplicationPage> */}
-    {/* <InstallationPage></InstallationPage> */}
-    {/* <ErrorPage></ErrorPage> */}
-    <AppDetailsPage></AppDetailsPage>
-    {/* <AppNotFoundPage></AppNotFoundPage> */}
+      {/* <AllApplicationPage></AllApplicationPage> */}
+      {/* <InstallationPage></InstallationPage> */}
+      {/* <ErrorPage></ErrorPage> */}
+      {/* <AppDetailsPage></AppDetailsPage>  */}
+      {/* <AppNotFoundPage></AppNotFoundPage> */}
       {/* <Banner></Banner>
       <States></States>
       <TopApps></TopApps> */}
