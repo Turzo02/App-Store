@@ -2,9 +2,9 @@
 import './App.css'
 import AllApplicationPage from './Components/AllAplicationPage/AllApplicationPage'
 import AppDetailsPage from './Components/AppDetailsPage/AppDetailsPage'
-import AppNotFoundPage from './Components/AppNotFoundPage/AppNotFoundPage'
+import AppNotFoundPage from './Pages/AppNotFoundPage/AppNotFoundPage'
 import Banner from './Components/Banner/Banner'
-import ErrorPage from './Components/ErrorPage/ErrorPage'
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import Footer from './Components/Footer/Footer'
 import InstallationPage from './Components/InstallationPage/InstallationPage'
 import Navbar from './Components/Navbar/Navbar'
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       {/* <AllApplicationPage></AllApplicationPage> */}
       {/* <InstallationPage></InstallationPage> */}
       {/* <ErrorPage></ErrorPage> */}
@@ -24,7 +24,7 @@ function App() {
       {/* <Banner></Banner>
       <States></States>
       <TopApps></TopApps> */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   )
 }

@@ -1,0 +1,146 @@
+[
+  {
+    "image": "/src/assets/Taskify.png",
+    "title": "Taskify",
+    "companyName": "NextGen Labs",
+    "id": 1,
+    "description": "Taskify is a comprehensive productivity and task management application designed to help individuals and teams streamline their daily workflows and accomplish goals efficiently. With an intuitive and user-friendly interface, users can create, organize, and prioritize tasks, set deadlines, and monitor progress. Taskify includes features such as customizable reminders, recurring tasks, collaborative task sharing, and seamless cloud synchronization, allowing users to access their to-do lists from multiple devices at any time. Advanced analytics provide insights into personal productivity patterns, helping users understand where their time is spent and optimize their work habits. Whether managing personal errands, professional projects, or collaborative team initiatives, Taskify serves as a robust platform to boost organization, increase productivity, and maintain a clear overview of all tasks. With flexible categorization, color-coded priorities, and notifications, Taskify ensures that important tasks are never missed, making it an essential tool for anyone seeking effective time management and goal tracking.",
+    "size": 48,
+    "reviews": 12500,
+    "ratingAvg": 4.5,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "/src/assets/FitTrack.png",
+    "title": "FitTrack",
+    "companyName": "Pulseware Inc.",
+    "id": 2,
+    "description": "FitTrack is an all-in-one fitness tracking and health monitoring application designed to support users in achieving their health, wellness, and fitness goals. It provides tools for tracking workouts, monitoring diet, analyzing sleep patterns, and keeping a comprehensive record of daily activities. FitTrack offers personalized fitness plans based on individual goals, activity levels, and preferences, including strength training, cardio, yoga, and more. Users can log meals and calories, set hydration reminders, and monitor macronutrient intake to maintain a balanced diet. The app also features advanced analytics that highlight progress, milestones, and areas for improvement, helping users stay motivated and make informed lifestyle decisions. Integration with wearable devices allows automatic synchronization of fitness data, heart rate monitoring, step counting, and sleep tracking. With social features, users can join fitness challenges, share achievements, and engage with a supportive community. FitTrack empowers users to lead healthier, more active lives with actionable insights, guided coaching, and community support, making fitness accessible and enjoyable for everyone.",
+    "size": 62,
+    "reviews": 8700,
+    "ratingAvg": 4.3,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "image": "/src/assets/PhotoSnap.png",
+    "title": "PhotoSnap",
+    "companyName": "PixelForge Studio",
+    "id": 3,
+    "description": "PhotoSnap is a powerful and versatile photo editing application designed for photographers, influencers, and creative enthusiasts seeking professional-quality results on the go. With a vast array of features, PhotoSnap allows users to enhance images using advanced filters, color correction, lighting adjustments, and AI-powered enhancements that automatically optimize photos for quality and clarity. The app supports multiple layers, blending modes, and masking, providing flexibility for complex editing tasks. Users can crop, resize, retouch, and remove unwanted objects with precision, as well as create artistic effects with customizable presets and textures. PhotoSnap also offers seamless integration with social media platforms, enabling users to share edited images directly to Instagram, Facebook, or other networks. The intuitive interface ensures that both beginners and professionals can navigate easily, experiment with creative techniques, and achieve stunning visuals. Additionally, the cloud-sync feature allows access to edited projects from any device, making PhotoSnap a comprehensive tool for personal or professional photo editing needs and creative expression.",
+    "size": 95,
+    "reviews": 34200,
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 22900 }
+    ]
+  },
+  {
+    "image": "/src/assets//NoteSpace.png",
+    "title": "NoteSpace",
+    "companyName": "CloudSphere",
+    "id": 4,
+    "description": "NoteSpace is a cloud-synced note-taking and organization application designed for students, professionals, and creative thinkers. The app allows users to create, categorize, and manage notes, lists, and documents with rich-text formatting, multimedia attachments, and tagging options. With NoteSpace, users can collaborate on shared notes, leave comments, and track changes in real time, making it ideal for teamwork, project planning, or study groups. The app features advanced search capabilities, allowing users to quickly locate notes based on keywords, tags, or dates. NoteSpace ensures that all content is securely backed up in the cloud, accessible across devices, and automatically synchronized to prevent data loss. Reminders and notifications help users stay on track with deadlines and important tasks, while customizable themes and layouts enhance the user experience. Whether organizing personal ideas, academic research, or work-related information, NoteSpace provides a robust and reliable platform for managing notes, fostering productivity, and maintaining clarity in daily life.",
+    "size": 32,
+    "reviews": 9100,
+    "ratingAvg": 4.2,
+    "downloads": "3.5M",
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 3300 }
+    ]
+  },
+  {
+    "image": "/src/assets/SoundiFy.png",
+    "title": "Soundify",
+    "companyName": "HarmonyTech",
+    "id": 5,
+    "description": "Soundify is a premium music streaming platform that allows users to discover, stream, and download millions of songs across all genres. The app offers personalized playlists, AI-generated recommendations, and curated content for moods, activities, and trends. Users can explore new releases, classic hits, and live recordings while creating their own playlists, sharing them with friends, and following their favorite artists. Soundify includes high-quality audio playback, offline listening, and synchronization across multiple devices for uninterrupted enjoyment. Integrated social features enable users to see what friends are listening to, join collaborative playlists, and participate in music communities. The app also supports podcasts, audiobooks, and other audio content, providing a comprehensive entertainment experience. With advanced search options, customizable equalizer settings, and notifications for new content, Soundify ensures a rich, engaging, and immersive listening experience. Its clean interface, intuitive controls, and continuous updates make it a favorite for music lovers seeking a reliable and enjoyable streaming solution.",
+    "size": 80,
+    "reviews": 52000,
+    "ratingAvg": 4.6,
+    "downloads": "25M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2800 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 32200 }
+    ]
+  },
+  {
+    "image": "/src/assets/TravelMate.png",
+    "title": "TravelMate",
+    "companyName": "Jetset Digital",
+    "id": 6,
+    "description": "TravelMate is an all-in-one travel planning and booking application that allows users to discover destinations, plan trips, and book accommodations seamlessly. Users can explore city guides, curated itineraries, and personalized travel suggestions based on interests, budget, and travel style. The app provides real-time flight and hotel information, price alerts, and secure payment options. TravelMate also includes interactive maps, local recommendations for restaurants, activities, and events, and the ability to create a complete travel itinerary with notes and reminders. Users can collaborate with friends and family to plan shared trips, sync travel calendars, and access offline resources for convenience while traveling. With integrated reviews, travel tips, and safety information, TravelMate ensures a smooth and enjoyable travel experience. The app helps users save time, avoid common travel mistakes, and discover hidden gems, making it an indispensable tool for travelers seeking efficiency, inspiration, and memorable adventures.",
+    "size": 70,
+    "reviews": 15400,
+    "ratingAvg": 4.4,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+
+  {
+        "image": "/src/assets/MindEase.png",
+    "title": "MindEase",
+    "companyName": "WellBeing Apps",
+    "id": 7,
+    "description": "MindEase is a comprehensive meditation and mental wellness application designed to help users reduce stress, improve focus, and cultivate mindfulness in daily life. With guided meditation sessions, breathing exercises, sleep aids, and relaxation music, MindEase caters to both beginners and advanced practitioners. The app provides personalized meditation plans based on user goals, time availability, and experience level, helping individuals integrate mindfulness practices into their routine. MindEase also tracks progress, offering insights on streaks, consistency, and stress patterns to encourage long-term habit formation. Users can choose from a variety of meditation styles, including mindfulness, body scan, loving-kindness, and visualization exercises. The app includes reminders, motivational prompts, and community challenges to enhance engagement and accountability. With a clean interface, soothing visuals, and offline access to sessions, MindEase empowers users to reduce anxiety, enhance mental clarity, improve sleep quality, and promote overall emotional well-being, making mindfulness practice convenient and effective.",
+    "size": 50,
+    "reviews": 7800,
+    "ratingAvg": 4.8,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "/src/assets/ShopNGo.png",
+    "title": "ShopNGo",
+    "companyName": "RetailVerse Ltd.",
+    "id": 8,
+    "description": "ShopNGo is a modern shopping application designed to provide users with a seamless online shopping experience across multiple categories, including fashion, electronics, groceries, and lifestyle products. With personalized recommendations, daily deals, and flash sales, the app ensures users never miss the best offers. ShopNGo features easy navigation, secure payment gateways, order tracking, and multiple delivery options to enhance convenience. Users can create wishlists, follow favorite brands, and receive notifications for new arrivals and discounts. The app also includes product reviews, ratings, and comparison features to help users make informed purchase decisions. Advanced search and filtering options allow quick access to desired products, while curated collections and trend highlights provide inspiration for shopping. With ShopNGo, users can enjoy a fast, reliable, and enjoyable shopping experience from their mobile devices, save time, and manage their purchases efficiently, whether shopping for essentials or discovering new products. The app’s intuitive interface and responsive design make it suitable for all users.",
+    "size": 55,
+    "reviews": 28700,
+    "ratingAvg": 4.1,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 3100 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 7800 },
+      { "name": "5 star", "count": 11100 }
+    ]
+  }]

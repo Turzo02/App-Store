@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
 import { Github } from 'lucide-react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -14,9 +15,21 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white ">
-                            <li><a>Home</a></li>
-                            <li><a>Apps</a></li>
-                            <li><a>Instalation</a></li>
+                            <li>
+                                <Link to="/" className="hover:text-[#9155ef] font-semibold">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/apps" className="hover:text-[#9155ef] font-semibold">
+                                    Apps
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/instalation" className="hover:text-[#9155ef] font-semibold">
+                                    Installation
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className='flex items-center '>
@@ -26,26 +39,45 @@ const Navbar = () => {
                             alt="logo"
                         />
 
-                        <a className="btn btn-ghost text-xl text-[#9155ef] font-bold hover:bg-[#9155ef] hover:text-white border-0 shadow-none">HERO.IO</a>
+            
+                        <Link to="/">
+  <span className="btn btn-ghost text-xl text-[#9155ef] font-bold 
+                   hover:bg-[#9155ef] hover:text-white border-0 shadow-none">
+    HERO.IO
+  </span>
+</Link>
+
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-semibold text-[16px] ">
-                        <li><a>Home</a></li>
-                        <li><a>Apps</a></li>
-                        <li><a>Instalation</a></li>
+                        <li>
+                            <Link to="/" className="hover:text-[#9155ef] font-semibold">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/apps" className="hover:text-[#9155ef] font-semibold">
+                                Apps
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/instalation" className="hover:text-[#9155ef] font-semibold">
+                                Installation
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a
+                    <a target='_blank'
                         href="https://github.com/Turzo02/App-Store"
                         className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
              flex py-2 px-4 rounded justify-center text-white font-semibold border-0 
-             hover:opacity-90  duration-300 transition  ease-in-out hover:scale-[1.01] hover:shadow-2xl hover:bg-white/10 cursor-pointer"
+             hover:opacity-90  duration-300 transition  ease-in-out hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)] hover:shadow-lg cursor-pointer"
                     >
                         <Github className="mr-2" /> Contribute
                     </a>
-
+                
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import HeroPng from "../../assets/hero.png";
 import playstore from "../../assets/google-play(1).png";
 import appStore from "../../assets/appstore (1).png";
+import { Link } from "react-router";
 const Banner = () => {
     return (
         <div className="max-w-[1440px] mx-auto  ">
@@ -19,15 +20,18 @@ const Banner = () => {
 
 
             <div className="middle   flex justify-center mt-5">
-                <button className="btn btn-outline border-[#9155ef] mr-3 hover:bg-[#9155ef] hover:border-0  duration-300 transition  ease-in-out hover:scale-[1.01] hover:shadow-2xl  cursor-pointer">
+                <Link
+                    to="/apps"
+                    className="btn btn-outline border-[#9155ef] mr-3 hover:bg-[#9155ef] hover:border-0 duration-300 transition ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer flex items-center"
+                >
                     <img src={playstore} alt="playstore" className="mr-2" />
                     Google Play
-                </button>
+                </Link>
 
-                <button className="btn btn-outline border-[#9155ef] hover:bg-[#9155ef] hover:border-0  transition duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl  cursor-pointer">
+                <Link to={"/apps"} className="btn btn-outline border-[#9155ef] hover:bg-[#9155ef] hover:border-0  transition duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl  cursor-pointer">
                     <img src={appStore} alt="appStore" className="mr-2" />
                     App Store
-                </button>
+                </Link>
 
 
             </div>
