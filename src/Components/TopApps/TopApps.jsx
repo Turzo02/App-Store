@@ -31,6 +31,132 @@ const TopApps = () => {
                         </div>
                     </div>
                 </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-white shadow-lg rounded-2xl overflow-hidden 
+                hover:shadow-2xl hover:-translate-x-1 hover:translate-y-1 
+                transition-transform duration-200">
+                    <div className="top flex justify-center p-3">
+                        <img src={img1} alt="" className="w-full object-cover rounded-2xl" />
+                    </div>
+                    <h1 className="px-3 mt-2">Forest: Focus for Productivity</h1>
+                    <div className="bottom flex justify-between px-3 pb-3 mt-2">
+                        <div className="flex items-center text-green-600 bg-green-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={downloadICon} alt="" />
+                            9M
+                        </div>
+                        <div className="flex items-center text-orange-500 bg-orange-200 px-2 rounded-md">
+                            <img className="w-4 mr-1" src={ratingIcon} alt="" />
+                            5
+                        </div>
+                    </div>
+                </div>
 
             </div>
 

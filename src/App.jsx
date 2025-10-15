@@ -1,5 +1,6 @@
 
 import './App.css'
+import AllApplicationPage from './Components/AllAplicationPage/AllApplicationPage'
 import Banner from './Components/Banner/Banner'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar/Navbar'
@@ -11,9 +12,10 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+    {/* <AllApplicationPage></AllApplicationPage> */}
+      {/* <Banner></Banner>
       <States></States>
-      <TopApps></TopApps>
+      <TopApps></TopApps> */}
       <Footer></Footer>
     </>
   )
