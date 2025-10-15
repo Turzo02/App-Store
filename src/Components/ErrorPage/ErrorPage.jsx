@@ -2,7 +2,7 @@ import React from 'react';
 import errorPng from '../../assets/error-404.png'
 const ErrorPage = () => {
     return (
-        <div className='max-w-[1440px] mx-auto '>
+        <div className='max-w-[1440px] mx-auto my-10 '>
             <div className='flex justify-center'>
                 <img src={errorPng} alt="" />
             </div>
