@@ -41,7 +41,7 @@ const Navbar = () => {
                         href="https://github.com/Turzo02/App-Store"
                         className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
              flex py-2 px-4 rounded justify-center text-white font-semibold border-0 
-             hover:opacity-90 transition duration-300"
+             hover:opacity-90  duration-300 transition  ease-in-out hover:scale-[1.01] hover:shadow-2xl hover:bg-white/10 cursor-pointer"
                     >
                         <Github className="mr-2" /> Contribute
                     </a>
