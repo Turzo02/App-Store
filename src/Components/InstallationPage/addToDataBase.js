@@ -12,7 +12,7 @@ const getInstallApp = () => {
 const addToDataBase = (id) => {
   const storeAppsData = getInstallApp();
   if (storeAppsData.includes(id)) {
-    alert("Bhal ei app agey install er jonno ghuta mrsilen");
+    console.log("Alert");
   } else {
     storeAppsData.push(id);
     const data = JSON.stringify(storeAppsData);

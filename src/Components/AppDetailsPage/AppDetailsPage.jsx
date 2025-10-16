@@ -4,6 +4,10 @@ import ratingpng from "../../assets/icon-ratings.png"
 import reviewpng from "../../assets/icon-review.png"
 import { Link, useLoaderData, useParams } from 'react-router';
 import { addToDataBase } from '../InstallationPage/addToDataBase';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 const AppDetailsPage = () => {
 
@@ -17,9 +21,21 @@ const AppDetailsPage = () => {
   const { description, companyName, ratingAvg, reviews, title, size, downloads, image } = signleAppData
 
   const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
-  
+
+
+
+
   const handleInstallBtn = (id) => {
     addToDataBase(id)
+
+
+    Swal.fire({
+      title: "App Installed!",
+      icon: "success",
+      draggable: true
+    });
+
+
   }
 
   return (
@@ -64,16 +80,14 @@ const AppDetailsPage = () => {
           </div>
 
           <div className="bottom flex justify-center md:justify-start">
-            <Link to={"/instalation"}>
-              <button onClick={() => handleInstallBtn(id) }
-                className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
+            <button onClick={() => handleInstallBtn(id)}
+              className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
             py-3 px-8 rounded-lg text-white font-semibold 
             hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)] 
             transition-all duration-300 shadow-md hover:shadow-lg"
-              >
-                Install Now ({size}MB)
-              </button>
-            </Link>
+            >
+              Install Now ({size}MB)
+            </button>
           </div>
         </div>
       </div>
