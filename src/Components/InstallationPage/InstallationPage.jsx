@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import downloadICon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
 import { useLoaderData } from 'react-router';
-import { getInstallApp } from './addToDataBase';
+import { getInstallApp, removeFromDataBase } from './addToDataBase';
 import Swal from 'sweetalert2';
 
 const InstallationPage = () => {
 
   const data = useLoaderData()
   const [appInstallList, setAppInstallList] = useState([])
+
   useEffect(() => {
     const storeAppData = getInstallApp()
     const convertedAppData = storeAppData.map(id => parseInt(id))
@@ -43,22 +44,23 @@ const InstallationPage = () => {
       sortedList.sort((a, b) => a.ratingAvg - b.ratingAvg);
     }
     else if (Type === "Downloads-High") {
-      sortedList.sort((a, b) => parseDownloads(b.downloads) - parseDownloads(a.downloads)); 
+      sortedList.sort((a, b) => parseDownloads(b.downloads) - parseDownloads(a.downloads));
     }
     else if (Type === "Downloads-Low") {
-      sortedList.sort((a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads)); 
+      sortedList.sort((a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads));
     }
 
     setAppInstallList(sortedList);
   };
 
 
-  const handleUninstallBtn = () => {
+  const handleUninstallBtn = (id) => {
+    const updatedList = appInstallList.filter(app => app.id !== id)
+    setAppInstallList(updatedList)
+    removeFromDataBase(id)
     Swal.fire({
       title: "App Uninstalled Successfully!",
       icon: "success",
-      draggable: true,
-      confirmButtonColor: "#9155ef",
     });
 
   }
@@ -106,10 +108,19 @@ const InstallationPage = () => {
 
 
         {/* card */}
+        {appInstallList.length === 0 && (
+          <div className="min-h-[300px] flex flex-col justify-center items-center text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-600 mb-4">No Apps Installed 😢</h2>
+            <p className="text-gray-500 max-w-md">
+              You haven’t installed any apps yet. Go back to explore and install your favorite ones!
+            </p>
+          </div>
+        )}
+
         {
           appInstallList.map((app) => {
 
-            const { ratingAvg, title, size, downloads, image } = app
+            const { id, ratingAvg, title, size, downloads, image } = app
             const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
 
 
@@ -137,7 +148,7 @@ const InstallationPage = () => {
                     </div>
                   </div>
                 </div>
-                <button onClick={() => handleUninstallBtn()} className="bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold py-2 px-6 rounded-md hover:from-purple-700 hover:to-purple-500 transition-all duration-300 cursor-pointer">
+                <button onClick={() => handleUninstallBtn(id)} className="bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold py-2 px-6 rounded-md hover:from-purple-700 hover:to-purple-500 transition-all duration-300 cursor-pointer">
                   Uninstall
                 </button>
               </div>

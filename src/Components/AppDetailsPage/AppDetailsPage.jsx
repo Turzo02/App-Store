@@ -1,42 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import downloadpng from "../../assets/icon-downloads.png"
 import ratingpng from "../../assets/icon-ratings.png"
 import reviewpng from "../../assets/icon-review.png"
-import { Link, useLoaderData, useParams } from 'react-router';
-import { addToDataBase } from '../InstallationPage/addToDataBase';
+import { useLoaderData, useParams } from 'react-router';
+import { addToDataBase, getInstallApp } from '../InstallationPage/addToDataBase';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-
+import AppNotFoundPage from '../../Pages/AppNotFoundPage/AppNotFoundPage';
+import AppReviewChart from './AppReviewChart/AppReviewChart';
 const MySwal = withReactContent(Swal)
+
+
 const AppDetailsPage = () => {
 
   const { id } = useParams()
   const data = useLoaderData()
   const appId = parseInt(id)
 
-  const signleAppData = data.find(app =>
-    app.id === appId
-  )
-  const { description, companyName, ratingAvg, reviews, title, size, downloads, image } = signleAppData
-
-  const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
-
-
   const [installed, setInstalled] = useState(false)
+
+  useEffect(() => {
+    const installedApps = getInstallApp()
+    if (installedApps.includes(appId)) {
+      setInstalled(true)
+    }
+  }, [appId])
+
+
+
+
+  const signleAppData = data.find(app => app.id === appId)
 
   const handleInstallBtn = (id) => {
     addToDataBase(id)
-
     setInstalled(true)
 
     Swal.fire({
-      title: "App Installed!",
+      title: "App Installed Successfully 🎉",
       icon: "success",
-      draggable: true
+      timer: 1200,
+      showConfirmButton: false,
     });
 
 
   }
+  if(!signleAppData){
+    return <AppNotFoundPage></AppNotFoundPage>
+  }
+
+  
+  const { description, companyName, ratingAvg, reviews, title, size, downloads, image } = signleAppData
+  const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
 
 
 
@@ -83,7 +97,7 @@ const AppDetailsPage = () => {
 
           <div className="bottom flex justify-center md:justify-start">
 
-            <button onClick={() => handleInstallBtn(id)}
+            <button onClick={() => handleInstallBtn(appId)}
               disabled={installed}
               className={`py-3 px-8 rounded-lg text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer 
         ${installed
@@ -99,7 +113,9 @@ const AppDetailsPage = () => {
       </div>
 
       <div className="Chartsratings my-6">
-        <h1 className='text-2xl font-semibold'>Ratings</h1>
+        <div className="reachart">
+            <AppReviewChart ratings={signleAppData.ratings}></AppReviewChart>
+        </div>
 
       </div>
 

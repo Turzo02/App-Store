@@ -1,19 +1,18 @@
 import React, { Suspense } from 'react';
 import { createBrowserRouter } from "react-router";
 import Root from '../Pages/Root/Root';
-import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import HomePage from '../Pages/HomePage/HomePage';
 import AllApplicationPage from '../Components/AllAplicationPage/AllApplicationPage';
 import InstallationPage from '../Components/InstallationPage/InstallationPage';
 import AppDetailsPage from '../Components/AppDetailsPage/AppDetailsPage';
-import LoadingSpinner from '../Components/LoadingSpinner/LoadingSpinner';
-
+import ErrorPage from "../Pages/ErrorPage/ErrorPage"
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
@@ -32,16 +31,21 @@ export const router = createBrowserRouter([
       {
         path: "/instalation",
         loader: () => fetch("/AllAppData.json"),
-        Component:InstallationPage
+        Component: InstallationPage
 
       },
       {
         path: "/appdetailspage/:id",
         loader: () => fetch("/AllAppData.json"),
-        Component:AppDetailsPage
+        Component: AppDetailsPage
       },
-
+      {
+        path:"*",
+        Component:ErrorPage
+      }
 
     ]
   },
 ]);
+
+

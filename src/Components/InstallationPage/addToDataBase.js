@@ -1,23 +1,21 @@
 const getInstallApp = () => {
   const storeAppsStr = localStorage.getItem("installList");
-
-  if (storeAppsStr) {
-    const storeAppsData = JSON.parse(storeAppsStr);
-    return storeAppsData;
-  } else {
-    return [];
-  }
+  return storeAppsStr ? JSON.parse(storeAppsStr) : [];
 };
 
 const addToDataBase = (id) => {
   const storeAppsData = getInstallApp();
-  if (storeAppsData.includes(id)) {
-    console.log("Alert");
-  } else {
+  if (!storeAppsData.includes(id)) {
     storeAppsData.push(id);
-    const data = JSON.stringify(storeAppsData);
-    localStorage.setItem("installList", data);
+    localStorage.setItem("installList", JSON.stringify(storeAppsData));
   }
 };
 
-export { addToDataBase,getInstallApp };
+const removeFromDataBase = (id) =>{
+  const storeAppsData = getInstallApp()
+  const updatedList  = storeAppsData.filter(appId => appId !== id)
+  localStorage.setItem("installList",JSON.stringify(updatedList))
+  return updatedList
+}
+
+export { addToDataBase, getInstallApp ,removeFromDataBase};

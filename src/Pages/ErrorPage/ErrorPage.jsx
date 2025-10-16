@@ -1,6 +1,8 @@
 import React from 'react';
 import errorPng from '../../assets/error-404.png'
+import { useNavigate } from 'react-router';
 const ErrorPage = () => {
+    const navigate = useNavigate()
     return (
         <div className='max-w-[1440px] mx-auto my-10 '>
             <div className='flex justify-center'>
@@ -14,13 +16,14 @@ const ErrorPage = () => {
             </div>
             <div className='flex justify-center'>
                 <button
+                onClick={()=> navigate("/")}
                     className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
              flex py-3 px-8 rounded justify-center text-white font-semibold border-0 
              cursor-pointer 
              hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)]
              transition-all duration-300"
                 >
-                    Go Back
+                    Go Back Home
                 </button>
             </div>
         </div>
