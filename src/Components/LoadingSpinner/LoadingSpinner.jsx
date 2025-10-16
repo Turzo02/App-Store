@@ -2,14 +2,14 @@ import React from 'react';
 
 const LoadingSpinner = () => {
   return (
-    <div className="flex flex-col items-center space-y-8 p-12 bg-white rounded-2xl shadow-xl shadow-gray-300/60 transition-all duration-300 transform hover:scale-[1.02]">
+    <div className="flex flex-col items-center space-y-8 p-12 bg-white rounded-2xl shadow-xl shadow-purple-200 transition-all duration-300 transform hover:scale-[1.02]">
 
       <div className="relative w-36 h-36">
         
         <div 
             className="w-full h-full 
                        border-8 border-gray-200 
-                       border-t-8 border-t-slate-500 
+                       border-t-8 border-t-purple-500 
                        rounded-full 
                        animate-spin 
                        opacity-80 
