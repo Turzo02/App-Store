@@ -16,30 +16,38 @@ const Navbar = () => {
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow  bg-white text-gray-700 font-semibold">
 
-                            <li>
-                                <NavLink to="/"
-                                    className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
+                        <li>
+  <NavLink
+    to="/"
+    className={({ isActive }) =>
+      `px-4 py-2 rounded-md  focus:outline-none ${isActive ? "bg-[#9155ef] text-white" : "text-gray-700"}`
+    }
+  >
+    Home
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/apps"
+    className={({ isActive }) =>
+      `px-4 py-2 rounded-md  focus:outline-none ${isActive ? "bg-[#9155ef] text-white" : "text-gray-700"}`
+    }
+  >
+    Apps
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/instalation"
+    className={({ isActive }) =>
+      `px-4 py-2 rounded-md  focus:outline-none ${isActive ? "bg-[#9155ef] text-white" : "text-gray-700"}`
+    }
+  >
+    Installation
+  </NavLink>
+</li>
 
-                                >
-                                    Home
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/apps"
-                                    className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
 
-                                >
-                                    Apps
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/instalation"
-                                    className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
-
-                                >
-                                    Installation
-                                </NavLink>
-                            </li>
 
                         </ul>
                     </div>
@@ -64,29 +72,36 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 font-semibold text-[16px] ">
 
                         <li>
-                            <NavLink to="/"
-                                className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
-
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    `hover:text-[#9155ef] focus:outline-none focus:bg-transparent ${isActive ? "text-[#9155ef]" : ""}`
+                                }
                             >
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/apps"
-                                className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
-
+                            <NavLink
+                                to="/apps"
+                                className={({ isActive }) =>
+                                    `hover:text-[#9155ef] focus:outline-none focus:bg-transparent ${isActive ? "text-[#9155ef]" : ""}`
+                                }
                             >
                                 Apps
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/instalation"
-                                className={({ isActive }) => `hover:text-[#9155ef] ${isActive ? "text-[#9155ef]" : ""}`}
-
+                            <NavLink
+                                to="/instalation"
+                                className={({ isActive }) =>
+                                    `hover:text-[#9155ef] focus:outline-none focus:bg-transparent ${isActive ? "text-[#9155ef]" : ""}`
+                                }
                             >
                                 Installation
                             </NavLink>
                         </li>
+
 
                     </ul>
                 </div>

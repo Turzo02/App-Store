@@ -119,7 +119,7 @@ const AppDetailsPage = () => {
 
       </div>
 
-      <div className="Description">
+      <div className="Description rounded-2xl shadow-md p-4">
         <h1 className="text-2xl font-semibold mb-3 text-center md:text-left">Description</h1>
         <p className="text-justify text-gray-800 leading-relaxed">
           {description}
