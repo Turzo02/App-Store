@@ -3,6 +3,7 @@ import downloadICon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
 import { useLoaderData } from 'react-router';
 import { getInstallApp } from './addToDataBase';
+import Swal from 'sweetalert2';
 
 const InstallationPage = () => {
 
@@ -30,29 +31,44 @@ const InstallationPage = () => {
   }
 
   const [sort, setSort] = useState("")
-  const handleSort = (Type) => {
 
-    setSort(Type)
-    let sortedList = [...appInstallList]
+  const handleSort = (Type) => {
+    setSort(Type);
+    let sortedList = [...appInstallList];
 
     if (Type === "Size") {
-      sortedList.sort((a, b) => a.size - b.size)
+      sortedList.sort((a, b) => a.size - b.size);
     }
     else if (Type === "Rating") {
-      sortedList.sort((a, b) => a.ratingAvg - b.ratingAvg)
+      sortedList.sort((a, b) => a.ratingAvg - b.ratingAvg);
     }
-    else if (Type === "Downloads") {
-      sortedList.sort((a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads))
+    else if (Type === "Downloads-High") {
+      sortedList.sort((a, b) => parseDownloads(b.downloads) - parseDownloads(a.downloads)); 
     }
-    setAppInstallList(sortedList)
+    else if (Type === "Downloads-Low") {
+      sortedList.sort((a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads)); 
+    }
+
+    setAppInstallList(sortedList);
+  };
+
+
+  const handleUninstallBtn = () => {
+    Swal.fire({
+      title: "App Uninstalled Successfully!",
+      icon: "success",
+      draggable: true,
+      confirmButtonColor: "#9155ef",
+    });
 
   }
+
 
   return (
 
     <div className='max-w-[1440px] mx-auto  mt-8  '>
       <div className="heading text-center">
-        <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
+        <h1 className='text-3xl md:text-4xl font-bold'>Your Installed Apps</h1>
         <p className='text-gray-700 py-2'>Explore Explore All Trending Apps on the Market developed by us</p>
       </div>
       <div className="middle flex justify-between items-center px-2">
@@ -66,20 +82,21 @@ const InstallationPage = () => {
             defaultValue=""
             onChange={(e) => handleSort(e.target.value)}
             className="w-full md:w-auto bg-white text-gray-700 font-semibold 
-             rounded-xl px-4 py-2 appearance-none 
-             border border-gray-300 shadow-sm 
-             focus:outline-none focus:ring-1 focus:ring-violet-500 focus:border-violet-500
-             transition-all duration-300 ease-in-out
-             hover:shadow-md cursor-pointer"
+   rounded-xl px-4 py-2 appearance-none 
+   border border-gray-300 shadow-sm 
+   focus:outline-none focus:ring-1 focus:ring-violet-500 focus:border-violet-500
+   transition-all duration-300 ease-in-out
+   hover:shadow-md cursor-pointer"
           >
             <option value="" disabled>
               Sort by
             </option>
-            <option value="Size">Size </option>
-            <option value="Rating">Rating </option>
-            <option value="Downloads">Downloads </option>
-
+            <option value="Size">Size</option>
+            <option value="Rating">Rating</option>
+            <option value="Downloads-High">Downloads : High-Low</option>
+            <option value="Downloads-Low">Downloads : Low-High</option>
           </select>
+
 
 
         </div>
@@ -101,7 +118,7 @@ const InstallationPage = () => {
 
               <div
                 key={app.id}
-                className="flex flex-col justify-between md:flex-row md:items-center gap-4 p-4 bg-white rounded-lg  mb-3 hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 border-gray-300 shadow-sm "
+                className="flex flex-col justify-between md:flex-row md:items-center gap-4 p-4 bg-white rounded-lg  mb-3 hover:-translate-y-0.5  hover:shadow-xl transition-all duration-300 border-gray-300 shadow-sm "
               >
                 <div className="flex items-center gap-4">
                   <img className="w-20 h-20 rounded-xl object-cover " src={appImg} alt="applogo" />
@@ -120,7 +137,7 @@ const InstallationPage = () => {
                     </div>
                   </div>
                 </div>
-                <button className="bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold py-2 px-6 rounded-md hover:from-purple-700 hover:to-purple-500 transition-all duration-300">
+                <button onClick={() => handleUninstallBtn()} className="bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold py-2 px-6 rounded-md hover:from-purple-700 hover:to-purple-500 transition-all duration-300 cursor-pointer">
                   Uninstall
                 </button>
               </div>

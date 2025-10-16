@@ -6,14 +6,12 @@ import { useLoaderData } from 'react-router';
 
 const HomePage = () => {
     const topAppsData = useLoaderData()
+
     return (
         <div>
             <Banner></Banner>
             <States></States>
-            <Suspense>
             <TopApps topAppsData={topAppsData} ></TopApps>
-            </Suspense>
-
         </div>
     );
 };

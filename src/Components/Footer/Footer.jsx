@@ -16,18 +16,18 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-3 text-white">Help</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-indigo-400 transition">FAQ</a></li>
-                            <li><a href="#" className="hover:text-indigo-400 transition">Contact Support</a></li>
-                            <li><a href="#" className="hover:text-indigo-400 transition">System Status</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">FAQ</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">Contact Support</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">System Status</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-semibold mb-3 text-white">Legal</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-indigo-400 transition">Terms of Use</a></li>
-                            <li><a href="#" className="hover:text-indigo-400 transition">Privacy Policy</a></li>
-                            <li><a href="#" className="hover:text-indigo-400 transition">Cookie Settings</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">Terms of Use</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">Privacy Policy</a></li>
+                            <li><a href="/" className="hover:text-indigo-400 transition">Cookie Settings</a></li>
                         </ul>
                     </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
                         <h4 className="font-semibold mb-3 text-white">Follow Us</h4>
                         <div className="flex space-x-4 text-gray-500">
                             <a
-                                href="#"
+                                href="/"
                                 aria-label="Twitter"
                                 className="hover:text-indigo-400 transition duration-150"
                             >
@@ -43,7 +43,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href="#"
+                                href="/"
                                 aria-label="Facebook"
                                 className="hover:text-indigo-400 transition duration-150"
                             >
@@ -51,7 +51,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href="#"
+                                href="/"
                                 aria-label="YouTube"
                                 className="hover:text-indigo-400 transition duration-150"
                             >

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import downloadpng from "../../assets/icon-downloads.png"
 import ratingpng from "../../assets/icon-ratings.png"
 import reviewpng from "../../assets/icon-review.png"
@@ -8,7 +8,6 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 const MySwal = withReactContent(Swal)
-
 const AppDetailsPage = () => {
 
   const { id } = useParams()
@@ -23,11 +22,12 @@ const AppDetailsPage = () => {
   const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
 
 
-
+  const [installed, setInstalled] = useState(false)
 
   const handleInstallBtn = (id) => {
     addToDataBase(id)
 
+    setInstalled(true)
 
     Swal.fire({
       title: "App Installed!",
@@ -37,6 +37,8 @@ const AppDetailsPage = () => {
 
 
   }
+
+
 
   return (
     <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -80,14 +82,18 @@ const AppDetailsPage = () => {
           </div>
 
           <div className="bottom flex justify-center md:justify-start">
+
             <button onClick={() => handleInstallBtn(id)}
-              className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
-            py-3 px-8 rounded-lg text-white font-semibold 
-            hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)] 
-            transition-all duration-300 shadow-md hover:shadow-lg"
+              disabled={installed}
+              className={`py-3 px-8 rounded-lg text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer 
+        ${installed
+                  ? "bg-gray-500 cursor-not-allowed hover:shadow-none"
+                  : "bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)]"
+                }`}
             >
-              Install Now ({size}MB)
+              {installed ? "Installed" : `Install Now (${size}MB)`}
             </button>
+
           </div>
         </div>
       </div>
