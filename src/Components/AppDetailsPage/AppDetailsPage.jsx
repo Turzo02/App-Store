@@ -2,7 +2,8 @@ import React from 'react';
 import downloadpng from "../../assets/icon-downloads.png"
 import ratingpng from "../../assets/icon-ratings.png"
 import reviewpng from "../../assets/icon-review.png"
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { addToDataBase } from '../InstallationPage/addToDataBase';
 
 const AppDetailsPage = () => {
 
@@ -13,7 +14,13 @@ const AppDetailsPage = () => {
   const signleAppData = data.find(app =>
     app.id === appId
   )
-  const { description, companyName, ratingAvg, reviews, title, size, downloads , image} = signleAppData
+  const { description, companyName, ratingAvg, reviews, title, size, downloads, image } = signleAppData
+
+  const appImg = new URL(`../../assets/${image}`, import.meta.url).href;
+  
+  const handleInstallBtn = (id) => {
+    addToDataBase(id)
+  }
 
   return (
     <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -22,7 +29,7 @@ const AppDetailsPage = () => {
         <div className="left w-full md:w-1/3 flex justify-center md:justify-start">
           <img
             className="w-full sm:w-[80%] md:w-full object-cover rounded-2xl hover:shadow-lg transition-shadow duration-300"
-            src={image}
+            src={appImg}
             alt="App Preview"
           />
         </div>
@@ -57,14 +64,16 @@ const AppDetailsPage = () => {
           </div>
 
           <div className="bottom flex justify-center md:justify-start">
-            <button
-              className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
-          py-3 px-8 rounded-lg text-white font-semibold 
-          hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)] 
-          transition-all duration-300 shadow-md hover:shadow-lg"
-            >
-              Install Now ({size}MB)
-            </button>
+            <Link to={"/instalation"}>
+              <button onClick={() => handleInstallBtn(id) }
+                className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] 
+            py-3 px-8 rounded-lg text-white font-semibold 
+            hover:bg-[linear-gradient(125.07deg,rgba(120,30,250,1),rgba(180,110,250,1)_100%)] 
+            transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Install Now ({size}MB)
+              </button>
+            </Link>
           </div>
         </div>
       </div>

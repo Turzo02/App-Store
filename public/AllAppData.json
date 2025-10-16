@@ -4,7 +4,7 @@
 [
   
   {
-    "image": "/src/assets/Taskify.png",
+    "image": "TaskiFy.png",
     "title": "Taskify",
     "companyName": "NextGen Labs",
     "id": 1,
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "image": "/src/assets/FitTrack.png",
+    "image": "FitTrack.png",
     "title": "FitTrack",
     "companyName": "Pulseware Inc.",
     "id": 2,
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "image": "/src/assets/PhotoSnap.png",
+    "image": "PhotoSnap.png",
     "title": "PhotoSnap",
     "companyName": "PixelForge Studio",
     "id": 3,
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "image": "/src/assets//NoteSpace.png",
+    "image": "NoteSpace.png",
     "title": "NoteSpace",
     "companyName": "CloudSphere",
     "id": 4,
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "image": "/src/assets/SoundiFy.png",
+    "image": "SoundiFy.png",
     "title": "Soundify",
     "companyName": "HarmonyTech",
     "id": 5,
@@ -94,7 +94,7 @@
     ]
   },
   {
-    "image": "/src/assets/TravelMate.png",
+    "image": "TravelMate.png",
     "title": "TravelMate",
     "companyName": "Jetset Digital",
     "id": 6,
@@ -113,7 +113,7 @@
   },
 
   {
-        "image": "/src/assets/MindEase.png",
+        "image": "MindEase.png",
     "title": "MindEase",
     "companyName": "WellBeing Apps",
     "id": 7,
@@ -131,7 +131,7 @@
     ]
   },
   {
-    "image": "/src/assets/ShopNGo.png",
+    "image": "ShopNGo.png",
     "title": "ShopNGo",
     "companyName": "RetailVerse Ltd.",
     "id": 8,
@@ -150,7 +150,7 @@
   },
   
   {
-"image": "/src/assets/MoneyWise.png",
+"image": "MoneyWise.png",
     "title": "MoneyWise",
     "companyName": "Fintech Pro",
     "id": 9,
@@ -168,7 +168,7 @@
     ]
   },
   {
-"image": "/src/assets/SkyCast.png",
+"image": "SkyCast.png",
     "title": "SkyCast",
     "companyName": "WeatherSoft",
     "id": 10,
@@ -186,7 +186,7 @@
     ]
   },
   {
-"image": "/src/assets/LigoLearn.png",
+"image": "LigoLearn.png",
     "title": "LingoLearn",
     "companyName": "EduCore",
     "id": 11,
@@ -204,7 +204,7 @@
     ]
   },
   {
-   "image": "/src/assets/TimeSynce.png",
+   "image": "TimeSynce.png",
     "title": "TimeSync",
     "companyName": "Schedulely",
     "id": 12,
@@ -223,7 +223,7 @@
   }
 ,
   {
- "image": "/src/assets/FoodieHub.png",
+ "image": "FoodieHub.png",
     "title": "FoodieHub",
     "companyName": "CulinaryTech",
     "id": 13,
@@ -241,7 +241,7 @@
     ]
   },
   {
-  "image": "/src/assets/RunTrack.png",
+  "image": "RunTrack.png",
     "title": "RunTrack",
     "companyName": "ActiveLife",
     "id": 14,
@@ -259,7 +259,7 @@
     ]
   },
   {
-  "image": "/src/assets/ClipMaster.png",
+  "image": "ClipMaster.png",
     "title": "ClipMaster",
     "companyName": "VidForge",
     "id": 15,
@@ -277,7 +277,7 @@
     ]
   },
   {
-  "image": "/src/assets/DealFinder.png",
+  "image": "DealFinder.png",
     "title": "DealFinder",
     "companyName": "BargainTech",
     "id": 16,
@@ -295,7 +295,7 @@
     ]
   },
   {
-   "image": "/src/assets/SkillBoost.png",
+   "image": "SkillBoost.png",
     "title": "SkillBoost",
     "companyName": "EduPrime",
     "id": 17,
@@ -313,7 +313,7 @@
     ]
   },
   {
- "image": "/src/assets/NewsFlash.png",
+ "image": "NewsFlash.png",
     "title": "NewsFlash",
     "companyName": "Global Media",
     "id": 18,
@@ -331,7 +331,7 @@
     ]
   },
   {
-    "image": "/src/assets/HealthPal.png",
+    "image": "HealthPal.png",
     "title": "HealthPal",
     "companyName": "MedTech Solutions",
     "id": 19,
@@ -349,7 +349,7 @@
     ]
   },
   {
-  "image": "/src/assets/FocusFlow.png",
+  "image": "FocusFlow.png",
     "title": "FocusFlow",
     "companyName": "MindTech Labs",
     "id": 20,

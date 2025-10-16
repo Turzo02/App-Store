@@ -1,6 +1,7 @@
 [
+  
   {
-    "image": "/src/assets/Taskify.png",
+    "image": "TaskiFy.png",
     "title": "Taskify",
     "companyName": "NextGen Labs",
     "id": 1,
@@ -18,7 +19,7 @@
     ]
   },
   {
-    "image": "/src/assets/FitTrack.png",
+    "image": "FitTrack.png",
     "title": "FitTrack",
     "companyName": "Pulseware Inc.",
     "id": 2,
@@ -36,7 +37,7 @@
     ]
   },
   {
-    "image": "/src/assets/PhotoSnap.png",
+    "image": "PhotoSnap.png",
     "title": "PhotoSnap",
     "companyName": "PixelForge Studio",
     "id": 3,
@@ -54,7 +55,7 @@
     ]
   },
   {
-    "image": "/src/assets//NoteSpace.png",
+    "image": "NoteSpace.png",
     "title": "NoteSpace",
     "companyName": "CloudSphere",
     "id": 4,
@@ -72,7 +73,7 @@
     ]
   },
   {
-    "image": "/src/assets/SoundiFy.png",
+    "image": "SoundiFy.png",
     "title": "Soundify",
     "companyName": "HarmonyTech",
     "id": 5,
@@ -90,7 +91,7 @@
     ]
   },
   {
-    "image": "/src/assets/TravelMate.png",
+    "image": "TravelMate.png",
     "title": "TravelMate",
     "companyName": "Jetset Digital",
     "id": 6,
@@ -109,7 +110,7 @@
   },
 
   {
-        "image": "/src/assets/MindEase.png",
+        "image": "MindEase.png",
     "title": "MindEase",
     "companyName": "WellBeing Apps",
     "id": 7,
@@ -127,7 +128,7 @@
     ]
   },
   {
-    "image": "/src/assets/ShopNGo.png",
+    "image": "ShopNGo.png",
     "title": "ShopNGo",
     "companyName": "RetailVerse Ltd.",
     "id": 8,

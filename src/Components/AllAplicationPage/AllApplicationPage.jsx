@@ -45,16 +45,19 @@ const AllApplicationPage = () => {
                 {/* Card Design */}
 
                 {
-                    AllAppsData.map(data=>
+                    AllAppsData.map(data=> {
 
-                 <Link to={`/appdetailspage/${data.id}`} key={data.id}
+                     const appImg = new URL(`../../assets/${data.image}`, import.meta.url).href;       
+
+
+                return ( <Link to={`/appdetailspage/${data.id}`} key={data.id}
                     className=" 
                                         card bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100
                             "
                 >
                     
                        <div className="top flex justify-center p-3">
-                                        <img src={data.image} alt="" className="w-full object-cover rounded-2xl" />
+                                        <img src={appImg} alt="" className="w-full object-cover rounded-2xl" />
                                     </div>
                                     <h1 className="px-3 font-semibold text-2xl">{data.title}</h1>
                                     <div className="bottom flex justify-between px-3 pb-3 mt-2">
@@ -68,7 +71,7 @@ const AllApplicationPage = () => {
                                         </div>
                                     </div>
 
-                </Link>
+                </Link>)}
                 
                     )
                 }
