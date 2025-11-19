@@ -5,10 +5,7 @@ My App Store is a modern, responsive web application that showcases trending app
 
 
 ## 📸 Screenshots
-
-![Screenshot 1](https://i.ibb.co/B5KzJChd/1A.png)  
 ![Screenshot 2](https://i.ibb.co/bMr9bp8H/2A.png)  
-![Screenshot 3](https://i.ibb.co/jP2HYYVg/3A.png)
 
 
 
