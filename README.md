@@ -4,10 +4,13 @@
 My App Store is a modern, responsive web application that showcases trending apps and allows users to explore detailed information about each one. Users can view app ratings, reviews, and download counts, and interact with engaging charts that visualize review statistics. The platform features smooth animations and an intuitive interface, providing a fun and seamless user experience across all devices. This project demonstrates responsive design, data visualization, and interactive UI elements to create an engaging digital storefront.
 
 
-## 📸 Screenshot
-![Project Screenshot](https://i.ibb.co.com/8nnMr0Bw/Screenshot-2025-11-19-133745.png)
-![Project Screenshot](https://i.ibb.co.com/8nnMr0Bw/Screenshot-2025-11-19-133745.png)
-![Project Screenshot](https://i.ibb.co.com/8nnMr0Bw/Screenshot-2025-11-19-133745.png)
+## 📸 Screenshots
+
+![Screenshot 1](https://i.ibb.co/B5KzJChd/1A.png)  
+![Screenshot 2](https://i.ibb.co/bMr9bp8H/2A.png)  
+![Screenshot 3](https://i.ibb.co/jP2HYYVg/3A.png)
+
+
 
 
 
